@@ -1,0 +1,15 @@
+.nav {
+  background-color: #14214b;
+  text-align: left;
+  font-family: Gayathri; }
+
+.home {
+  background-color: #14214b;
+  background-image: url("/img/background.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 2rem;
+  color: white; }
+
+/*# sourceMappingURL=sections.css.map */

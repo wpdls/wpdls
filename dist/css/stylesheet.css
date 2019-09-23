@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #14214b;
+  text-align: center;
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: #feffeb; }
+
+h1 {
+  color: #43e19a;
+  font-family: Pacifico;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: .5rem; }
+
+h2 {
+  border-bottom: 6px dotted white;
+  padding-bottom: 1rem;
+  margin: .5rem; }
+
+p {
+  margin: .5rem; }
+
+.nav {
+  background-color: #14214b;
+  text-align: left;
+  font-family: Gayathri; }
+
+.home {
+  background-color: #14214b;
+  background-image: url("/img/background.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 2rem;
+  color: white; }
+
+footer {
+  background-color: #14214b;
+  height: 4.5em;
+  font-family: "Gayathri";
+  color: white;
+  padding: 1.5em; }
+  footer .nav {
+    font-size: 75%;
+    background-color: #14214b;
+    display: flex;
+    justify-content: flex-end; }
+    footer .nav a {
+      color: white;
+      text-decoration: none;
+      padding: .3rem; }
+    footer .nav a:hover {
+      color: #43e19a; }
+
+nav {
+  background-color: #14214b;
+  height: 2rem;
+  font-family: "Gayathri";
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem; }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: .3rem; }
+  nav a:hover {
+    color: #43e19a; }
+
+.header {
+  background-color: #14214b;
+  display: flex;
+  justify-content: space-between; }
+  .header img {
+    padding: 0rem;
+    margin-left: 4rem; }
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+  font-family: Pacifico;
+  position: fixed;
+  bottom: 7rem;
+  float: left;
+  left: 0;
+  max-width: 50px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #43e19a;
+  padding: .5px;
+  border-radius: 4px;
+  text-decoration: none; }
+
+/*On Hover Color Change*/
+#myBtn:hover {
+  background-color: #43e19a; }
+
+.aboutme {
+  padding: 0rem 1rem; }
+  .aboutme .contactlink {
+    font-family: Pacifico;
+    padding: .5rem;
+    font-display: none;
+    color: #43e19a;
+    text-decoration: none;
+    font-size: 1.5rem; }
+  .aboutme a:hover {
+    color: hotpink; }
+
+.aboutmeflex {
+  display: flex;
+  justify-content: center; }
+
+.box {
+  width: 30rem;
+  padding: 1rem;
+  border: 7px dotted white; }
+
+.skills {
+  display: flex;
+  flex-direction: column; }
+
+table {
+  border-collapse: collapse;
+  width: 15rem;
+  height: 10rem;
+  border: 7px dotted white; }
+
+.table {
+  display: flex;
+  justify-content: center; }
+
+.donut-chart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
+  border-radius: 100%; }
+
+p.center {
+  background: #394264;
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0; }
+
+.portion-block {
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+  height: 100%;
+  position: absolute;
+  width: 100%; }
+
+.circle {
+  border-radius: 50%;
+  clip: rect(0px, 100px, 200px, 0px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  font-family: monospace;
+  font-size: 1.5rem; }
+
+#part1 {
+  transform: rotate(0deg); }
+
+#part1 .circle {
+  background-color: #E64C65;
+  /*transform: rotate(76deg);*/
+  animation: first 1s 1 forwards; }
+
+#part2 {
+  transform: rotate(100deg); }
+
+#part2 .circle {
+  background-color: #11A8AB;
+  animation: second 1s 1 forwards 1s; }
+
+#part3 {
+  transform: rotate(250deg); }
+
+#part3 .circle {
+  background-color: #4FC4F6;
+  animation: third 0.5s 1 forwards 2s; }
+
+/* Animation */
+@keyframes first {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(100deg); } }
+
+@keyframes second {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(150deg); } }
+
+@keyframes third {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(111deg); } }
+
+.portfolio {
+  padding: 0rem 1rem; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .cards img {
+    width: 13rem; }
+
+.project {
+  margin: 1rem;
+  border: 7px dotted white;
+  width: 19rem; }
+
+.projectp {
+  border-bottom: 6px dotted white; }
+
+.project-footer {
+  font-family: Pacifico;
+  padding: .5rem;
+  display: flex;
+  justify-content: space-around;
+  font-display: none; }
+  .project-footer a {
+    color: #43e19a;
+    text-decoration: none;
+    font-size: 1.5rem; }
+  .project-footer a:hover {
+    color: hotpink; }
+
+span {
+  font-weight: bold; }
+
+.contact {
+  padding: 0rem 1rem;
+  margin-bottom: 2rem;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+  /* Add a background color and some padding around the form */ }
+  .contact .contactflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contact .links {
+    display: flex;
+    margin: 1rem; }
+  .contact input[type=text], .contact select, .contact textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical; }
+  .contact input[type=submit] {
+    background-color: #feffeb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: Pacifico;
+    color: #43e19a; }
+  .contact input[type=submit]:hover {
+    background-color: #feffeb;
+    color: hotpink; }
+  .contact .contactbox {
+    width: 30rem;
+    border-radius: 5px;
+    border: 7px dotted white;
+    padding: 20px; }
+
+/*# sourceMappingURL=stylesheet.css.map */
